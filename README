@@ -1,0 +1,5 @@
+ANOTACIONES:
+
+1.El archivo uni_bd es la exportación de la BD usada en el aplicativo, creada XAMPP (phpMyAdmin).
+2.La carpeta phpClass continene los CRUD's correspondientes en el aplicativo.
+3.No olvidar realizar las debidas configuraciones de IP en las variables "URL" para que se puedan conectar correctamente en el localHost de XAMPP.
