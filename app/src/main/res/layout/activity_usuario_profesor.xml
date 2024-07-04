@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsuarioProfesor">
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:foreground="@drawable/boton__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProyectos" />
+
+    <Button
+        android:id="@+id/btnProyectos"
+        android:layout_width="246dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:text="Unirse a un proyecto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGrupos" />
+
+    <Button
+        android:id="@+id/btnGrupos"
+        android:layout_width="326dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="70dp"
+        android:text="Unirse a un grupo de investigacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUsuario" />
+
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="43dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

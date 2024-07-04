@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarGrupo">
+
+    <TextView
+        android:id="@+id/lblCodigoGrupoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="67dp"
+        android:text="Codigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCodigoGrupoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/lblCodigoGrupoRegistro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombreGrupoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="59dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCodigoGrupoRegistro" />
+
+    <EditText
+        android:id="@+id/txtNombreGrupoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/lblNombreGrupoRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoGrupoRegistro" />
+
+    <TextView
+        android:id="@+id/lblPresupuestoGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="63dp"
+        android:text="Presupuesto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreGrupoRegistro" />
+
+    <EditText
+        android:id="@+id/txtPresupuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/lblPresupuestoGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreGrupoRegistro" />
+
+    <Button
+        android:id="@+id/btnAtrasGrupoRegistro"
+        android:layout_width="93dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/salida__1_"
+        android:onClick="Cerrar"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresupuestoGrupo" />
+
+    <Button
+        android:id="@+id/btnRegistrarGrupo"
+        android:layout_width="91dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="92dp"
+        android:foreground="@drawable/registrarse"
+        android:onClick="Registrar"
+        android:text="Registrar"
+        app:icon="@android:drawable/presence_online"
+        app:layout_constraintStart_toEndOf="@+id/btnAtrasGrupoRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/txtPresupuesto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

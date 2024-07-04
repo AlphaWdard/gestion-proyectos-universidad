@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnirseProyecto">
+
+    <TextView
+        android:id="@+id/txtCodigoProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="55dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/lblCodigoProyecto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCodigoProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="55dp"
+        android:text="Codigo"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombreProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="36dp"
+        android:text="Nombre"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCodigoProyecto" />
+
+    <TextView
+        android:id="@+id/lblPresupuestoProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="38dp"
+        android:text="Presupuesto"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreProyecto" />
+
+    <Button
+        android:id="@+id/btnAtrasProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="68dp"
+        android:foreground="@drawable/salida__1_"
+        android:onClick="salir"
+        android:text="Atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFechaFinal" />
+
+    <Button
+        android:id="@+id/btnUnirseProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="68dp"
+        android:onClick="Unirse"
+        android:text="Unirse"
+        app:layout_constraintStart_toEndOf="@+id/btnProyectoMiembros"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaFinal" />
+
+    <TextView
+        android:id="@+id/txtNombreProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/lblNombreProyecto"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoProyecto" />
+
+    <TextView
+        android:id="@+id/txtPresupuestoProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/lblPresupuestoProyecto"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreProyecto" />
+
+    <TextView
+        android:id="@+id/lblFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="36dp"
+        android:text="Fecha Inicio"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresupuestoProyecto" />
+
+    <TextView
+        android:id="@+id/lblFechaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Fecha Final"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFechaInicio" />
+
+    <TextView
+        android:id="@+id/txtFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/lblFechaInicio"
+        app:layout_constraintTop_toBottomOf="@+id/txtPresupuestoProyecto" />
+
+    <TextView
+        android:id="@+id/txtFechaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/lblFechaFinal"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaInicio" />
+
+    <Button
+        android:id="@+id/btnProyectoMiembros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="70dp"
+        android:onClick="miembros"
+        android:text="Mienbros"
+        app:layout_constraintStart_toEndOf="@+id/btnAtrasProyecto"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaFinal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

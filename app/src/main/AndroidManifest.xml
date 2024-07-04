@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ppc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PPC"
+        tools:targetApi="31">
+        <activity
+            android:name=".Grafica"
+            android:exported="false" />
+        <activity
+            android:name=".Mienbros"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarProyecto"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarGrupo"
+            android:exported="false" />
+        <activity
+            android:name=".Regitrar"
+            android:exported="false" />
+        <activity
+            android:name=".Recuperar"
+            android:exported="false" />
+        <activity
+            android:name=".UnirseProyecto"
+            android:exported="false" />
+        <activity
+            android:name=".EditarProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor"
+            android:exported="false" />
+        <activity
+            android:name=".Profesores"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UnirseGrupo"
+            android:exported="false" />
+        <activity
+            android:name=".Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".GruposInvestigacion"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnirseGrupo">
+
+    <TextView
+        android:id="@+id/lblIdGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="83dp"
+        android:text="ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombreGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="59dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblIdGrupo" />
+
+    <TextView
+        android:id="@+id/lblAreaGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="56dp"
+        android:text="Area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreGrupo" />
+
+    <TextView
+        android:id="@+id/txtIdGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblIdGrupo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombreGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="63dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblNombreGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdGrupo" />
+
+    <TextView
+        android:id="@+id/txtAreaGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblAreaGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreGrupo" />
+
+    <Button
+        android:id="@+id/btnAtrasUnirseGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/salida__1_"
+        android:onClick="salir"
+        android:text="Atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAreaGrupo" />
+
+    <Button
+        android:id="@+id/btnUnirseGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="356dp"
+        android:onClick="buscar"
+        android:text="Unirse"
+        app:layout_constraintStart_toEndOf="@+id/btnGrupoMienbros"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGrupoMienbros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:onClick="miembros"
+        android:text="Miembros"
+        app:layout_constraintStart_toEndOf="@+id/btnAtrasUnirseGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/txtAreaGrupo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

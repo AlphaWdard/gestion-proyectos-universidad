@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profesor">
+
+    <TextView
+        android:id="@+id/lblIdProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="143dp"
+        android:text="ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombreProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="49dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblIdProfesor" />
+
+    <TextView
+        android:id="@+id/lblTituloProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="49dp"
+        android:text="Titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreProfesor" />
+
+    <TextView
+        android:id="@+id/txtIdProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="143dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblIdProfesor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombreProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="49dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblNombreProfesor"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdProfesor" />
+
+    <TextView
+        android:id="@+id/txtTituloProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="49dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lblTituloProfesor"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreProfesor" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="116dp"
+        android:foreground="@drawable/salida__1_"
+        android:onClick="salir"
+        android:text="Atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloProfesor" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="87dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="116dp"
+        android:foreground="@drawable/editar"
+        android:onClick="editare"
+        android:text="Editar"
+        app:layout_constraintStart_toEndOf="@+id/btnAtras"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloProfesor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
